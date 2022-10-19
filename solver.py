@@ -88,6 +88,6 @@ def main(x0,xf,y0,yf,n,m,xi,F):
     
     # invertir la matriz y aplicarla al vector indep
     Minv = np.linalg.inv(M_coef)
-    sol = np.matmul(Minv,V_indep) # solucion en formato k
+    sol = np.matmul(Minv,V_indep) # solucion en formato k (cambiar esto por linalg.solve?)
 
     return aux_phi_k2ij(sol,n,m) # devolver solucion en formato i,j
